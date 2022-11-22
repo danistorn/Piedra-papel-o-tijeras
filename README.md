@@ -1,2 +1,2 @@
-# Piedra-papel-o-tijeras
-Proyecto Fundamentos JavaScript
+# Proyecto Fundamentos JavaScript
+Juego Piedra papel o tijeras, usuario vs computadora
