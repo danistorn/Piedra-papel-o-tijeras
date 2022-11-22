@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ppt.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <figure><img src="./img/game.png"></figure>
+            <h2>JsGame</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Piedras, Papel o Tijeras!</h1>
+
+        <div class="resultados">
+            <div class="resultados-container">
+                <div class="results-up">
+                    <div class="human-pane">
+                        <h2>Tu elección</h2>
+                        <figure><img id="user_img" src="img/question.png"></figure>
+                    </div>
+                    <div class="vs-pane">
+                        <h2>vs</h2>
+                    </div>
+                    <div class="machine-pane">
+                        <h2>Maquina</h2>    
+                        <figure><img id="cpu_img" src="img/question.png"></figure>
+                    </div>
+                </div>
+                <div class="results-down">
+                    
+                    <h2 class="results">Resultado<br></h2>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="down-panel">
+            <h2 class="indicaciones">Selecciona tu jugada!</h2>
+            <div class="eleccion">
+                <button class="stone circle">
+                    <img src="./img/stone.jpeg" class="img">
+                </button>
+                <button class="paper circle">
+                    <img src="./img/paper.jpeg" class="img">
+                </button>
+                <button class="scissors circle">
+                    <img src="./img/scissors.jpeg" class="img">
+                </button>
+            </div>
+        </div>
+
+
+        <script src="javascript/ppt.js"></script>
+    </div>
+
+
+
+</body>
+</html>

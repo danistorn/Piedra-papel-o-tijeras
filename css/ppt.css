@@ -1,0 +1,208 @@
+body {
+    margin: 0;      /*Limpiamos para empezar*/
+    padding: 0;
+    overflow-x: hidden;  /*Aunque achique mucho la pantalla, no aparecera un scroll horizontal*/
+    background: #053666;
+}
+
+figure {
+    margin: 15px;
+}
+
+
+/*////////////////////////////////////////////////*/
+
+header, header div, header ul{
+    display: flex;      /*Los elementos uno al lado del otro*/
+    align-items: center;       /*Alinear verticalmente*/
+}
+header {
+    justify-content: space-between;     /*Que se vayan a las puntas, dejando espacio entre medio*/
+    padding: 0 30px 0 30px; 
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    width: 100vw; /*La hace relativa al viewport, no al elemento padre*/
+    color: #fff;
+    background: #369;
+}
+
+
+header img{
+    width: 40px;
+}
+
+
+header li {
+    list-style: none;   /*Sin los puntos de las listas */
+    margin: 10px;       /*Separar un poco el Home y About entre sí*/
+    transition: all 0.3s ease-in-out;
+    font-weight:700; 
+}
+header li:hover{
+    display: block;
+    transform: scale(1.2);
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.container {
+    display: flex;
+    background: #369;
+    flex-direction: column;  /*Que los sectores de la pag esten en columna: uno abajo del otro. Título, Resultados, Elección*/
+    align-items: center;
+    font-family: 'Bangers', cursive;
+    color: #fff;    /*No solo los h sino tmbn los bordes*/
+}
+
+
+/*//////// h /////////*/
+
+
+.container h1{   /*Título principal*/
+    font-size: 40px;
+    color: #F8CB2B;
+    
+}
+
+.container h1, .container h2, .container h3{    /*El resto de los titulos (mas claritos que el principal)*/
+    font-weight: lighter;
+}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*El cuadrito que envualve el TABLERO DE JUGADA*/
+
+.resultados {
+    padding: 5px;
+}
+
+
+.resultados, .resultados-container{
+    border: 5px solid;
+    border-radius: 20px;
+}
+
+
+/*/////////////*/
+/*Interior del TABLERO DE JUGADA*/
+
+.results-up {
+    display: flex;  /*Uno al lado del otro los Humano vs Machine*/
+    align-items: center;
+    
+}
+
+.results-up div{
+    margin:26px;
+    text-align: center;
+}
+
+
+.human-pane, .vs-pane, .machine-pane {
+    display: flex;
+    
+}
+
+
+/*/////////////////////   RESULTADO   ///////////////////////////*/
+
+.results-up h2 {
+    text-align: center;
+}
+
+.results-down {
+    text-align: center;  /*Si adentro del div hay un h y listo. Si hay otros divs no sirve*/
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.down-panel{
+    text-align: center;  
+    position: relative;     /*???????????????*/
+    border-radius: 30px;    /*???????????????*/
+    overflow: hidden;   /*???????????????*/
+}
+
+.down-panel h2 {
+    color: #F8CB2B;
+    font-size: 32px;
+}
+
+
+/*/////////////////*/
+
+
+.human-pane, .vs-pane, .machine-pane {
+    display:flex;
+    flex-direction: column;    
+}
+
+
+
+/*////////////   OPCIONES A ELEJIR   ////////////*/
+
+
+.circle {   /*Cada boton de PPyT*/
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: transparent;
+}
+.circle > img {     /*La img de cada botón (de PPyT). Para que sea redonda */
+    width: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+#user_img {
+    width: 100%;
+    width: 100%;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: transparent;
+}
+
+#cpu_img {
+    width: 100%;
+    width: 100%;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: transparent;
+}
+
+
+.eleccion button {
+    cursor: pointer;
+    margin: 20px;    /*Poner espacio entre las: piedra - papel - tijeras */
+    
+    padding: 10px;   
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+
+
+.eleccion button img{
+    margin: 0;
+    height: 95%;
+    display: flex;
+
+}
+
+
+
+.eleccion button:hover {    /*Brillo al hovear*/
+    background: #fff;
+    box-shadow: -1px 2px 18px 0px #fff;
+}
+
